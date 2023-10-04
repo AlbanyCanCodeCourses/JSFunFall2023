@@ -8,4 +8,5 @@ let price = 5.99;
 // WRITE YOUR ANSWER BELOW THIS LINE
 
 let newPrice = 10;
+price = price + newPrice;
 console.log(newPrice);
