@@ -2,6 +2,7 @@
 # Usually, you would commit this, but I am ignoring this for class.
 package-lock.json
 yarn.lock
+*.code-workspace
 
 # Created by https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,macos,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,visualstudiocode,macos,windows
