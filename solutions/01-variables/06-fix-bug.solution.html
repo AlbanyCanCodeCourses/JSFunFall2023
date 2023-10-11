@@ -19,40 +19,30 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <style>
-      #answer {
-        display: inline-block;
-      }
-    </style>
   </head>
   <body>
     <form id="form" action="GET" class="container pt-5 mb-5">
-      <input id="a" type="number" value="0" />
-      +
-      <input id="b" type="number" value="0" />
-      =
-      <span class="border rounded-1 bg-light py-1 px-2" id="answer">0</span>
+      <label for="name">Your Name:</label>
+      <input id="name" type="text" />
+      <button class="btn btn-primary" type="submit">Next</button>
     </form>
     <script>
       /**
        * Note: We will be going over a lot of what this code is doing later when we talk about the "DOM".
-       * For now, you just need to use what you've learned about numbers to complete this exercise.
-       * If you get this exercise right, it should add the two inputs and display the results on the screen.
-       * If "= 0" is always displayed on your screen, then there is a bug in your code.
+       * For now, you just need to use what you've learned about variables to complete this exercise.
+       * If you get this exercise right, after entering your name and clicking "Next",
+       * you should see a popup that says "Hello YOUR_NAME"
        */
 
       // Do not change this.
       !(function () {
-        Object.values(document.querySelectorAll("input")).forEach((input) => {
-          input.addEventListener("input", () => {
-            let a = parseInt(document.querySelector("#a").value || 0);
-            let b = parseInt(document.querySelector("#b").value || 0);
+        document.querySelector("#form").addEventListener("submit", (e) => {
+          e.preventDefault();
 
-            // Create a variable called "sum" on the line below. It should be equal to a + b.
+          let content = document.querySelector("#name").value; // Change this line only. Set me to a variable called "content".
 
-            let sum = a + b;
-            document.querySelector("#answer").textContent = sum || "-";
-          });
+          // Do not change this
+          alert("Hello " + content);
         });
       })();
     </script>
