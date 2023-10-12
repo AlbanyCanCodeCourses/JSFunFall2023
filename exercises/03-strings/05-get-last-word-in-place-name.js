@@ -16,3 +16,9 @@ const place = "New Jersey"; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+let index = place.indexOf(" ");
+const newPlace = place.indexOf(" ");
+const nj = place.substring(index + 1);
+console.log(nj);
+
