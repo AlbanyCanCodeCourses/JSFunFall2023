@@ -16,3 +16,8 @@ const place = "New Jersey"; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+const index = place.indexOf(" ");
+const newPlace = place.substring(index + 1);
+const myString = "i'm typing with out autocapitalize";
+const newString = myString[0].toUpperCase() + myString.substring(1);
+console.log(newString);
