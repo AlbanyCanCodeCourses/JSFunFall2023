@@ -6,7 +6,7 @@ const place = "New Jersey"; // e.g.
  *
  * @example
  * If "place" is equal to "New Jersey",
- * "newPlace" should equal "York"
+ * "newPlace" should equal "Jersey"
  *
  * If "place" is equal to "New Mexico",
  * "newPlace" should equal "Mexico"
