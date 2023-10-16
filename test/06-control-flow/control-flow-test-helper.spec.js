@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { addDrink, addTip } from "./control-flow-test-helper.js";
 
-describe("6. Control Flow", () => {
+describe("Control Flow", () => {
   describe("01-if-statement.js", () => {
     it('should add "drink" to the variable "total" if "isBuyingDrink" is true"', () => {
       expect(addDrink(6.95, 1.99, true)).to.be.a("number").to.equal(8.94);
