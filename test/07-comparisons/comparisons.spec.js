@@ -8,7 +8,7 @@ import {
   isEven,
 } from "./comparisons-test-helper.js";
 
-describe("7. Comparisons", () => {
+describe("Comparisons", () => {
   describe("01-is-equal", () => {
     it('"isEqual" should be true when "userInput1" strictly equals "userInput2', () => {
       expect(isEqual(5, 5)).to.be.true;
