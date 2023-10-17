@@ -13,7 +13,7 @@ const {
 
 const readPrintGreeting = consoleHelper(printGreeting);
 
-describe("8. Functions", () => {
+describe("Functions", () => {
   describe("01-invoke-function", () => {
     it('should invoke the function "calculateTotal", passing in the subtotal of 50 and tax of 0.2 as arguments', () => {
       const [, args] = invokeFunction();
