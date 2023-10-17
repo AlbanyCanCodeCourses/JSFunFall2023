@@ -13,3 +13,12 @@ let total;
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+let customerTipped = true;
+
+if (customerTipped) {
+  total = subtotal + tip;
+  console.log(`Your total is ${total}`);
+} else {
+  total = subtotal;
+  console.log(`Your total is ${total}`);
+}
