@@ -16,7 +16,7 @@ let total;
 let customerTipped = true;
 
 if (customerTipped) {
-  total = subtotal + tip;
+  total = subtotal + subtotal * tip;
   console.log(`Your total is ${total}`);
 } else {
   total = subtotal;
