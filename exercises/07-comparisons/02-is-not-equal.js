@@ -1,7 +1,7 @@
-let isNotAtGoalWeight;
+// let isNotAtGoalWeight;
 
-let targetBMI = 24; // e.g.
-let actualBMI = 27; // e.g.
+// let targetBMI = 24; // e.g.
+// let actualBMI = 27; // e.g.
 
 /**
  * You will be changing the value of "isNotAtGoalWeight" below.
@@ -11,3 +11,17 @@ let actualBMI = 27; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+// isNotAtGoalWeight = targetBMI === actualBMI;
+
+// if (targetBMI === actualBMI) {
+//   console.log("correct");
+// }
+
+// console.log(isNotAtGoalWeight);
+
+const personId = (homeTown, birthday) => {
+  return `I am from ${homeTown} and i was born in ${birthday}`;
+};
+
+personId();

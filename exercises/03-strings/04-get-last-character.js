@@ -9,5 +9,5 @@ let str = "Wes Craven"; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
-const lastCharacter = str[str.length - 1];
+let lastCharacter = str[str.length - 1];
 console.log(lastCharacter);
