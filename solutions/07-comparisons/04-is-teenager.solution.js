@@ -9,4 +9,20 @@ let age = 14; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+// Method 1
+let isTeenager;
+if (age > 12 && age < 20) {
+  isTeenager = true;
+} else {
+  isTeenager = false;
+}
+
+// Method 2
+let isTeenager = false;
+if (age > 12 && age < 20) {
+  isTeenager = true;
+}
+
+// Method 3
 let isTeenager = age > 12 && age < 20;

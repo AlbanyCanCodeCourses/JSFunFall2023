@@ -12,4 +12,12 @@ let actualBMI = 27; // e.g.
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
+// Method 1
+if (targetBMI !== actualBMI) {
+  isNotAtGoalWeight = true;
+} else {
+  isNotAtGoalWeight = false;
+}
+
+// Method 2
 isNotAtGoalWeight = targetBMI !== actualBMI;

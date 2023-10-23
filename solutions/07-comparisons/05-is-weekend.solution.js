@@ -9,7 +9,20 @@ let day = "Saturday";
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+// Method 1
+let isWeekend;
+if (day === "Saturday" || day === "Sunday") {
+  isWeekend = true;
+} else {
+  isWeekend = false;
+}
+
+// Method 2
 let isWeekend = false;
 if (day === "Saturday" || day === "Sunday") {
   isWeekend = true;
 }
+
+// Method 3
+let isWeekend = day === "Saturday" || day === "Sunday";
