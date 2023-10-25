@@ -5,10 +5,8 @@
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
-
-
 let restaurants = [
-  "McDonalds",
-  "Burger King",
-  "Wendy's",
+  "Lost & Found Bar & Kitchen",
+  "Dinosaur Bar-B-Que",
+  "Karavalli",
 ];
