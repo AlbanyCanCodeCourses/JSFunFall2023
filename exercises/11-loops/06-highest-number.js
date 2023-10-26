@@ -7,3 +7,13 @@ let numbers = [10000, -8, 10, 0.7]; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+let highest = numbers[0];
+
+for (const number of numbers) {
+  if (number > highest) {
+    highest = number;
+  }
+}
+
+console.log(highest);
