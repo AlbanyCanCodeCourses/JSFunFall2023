@@ -1,26 +1,15 @@
+const user = { id: 1234, username: "lolcatz1", email: "lolcatz1@gmail.com" }; // e.g.
+const newEmail = "purrfect@gmail.com"; // e.g.
+
 /**
- * Change the value of email property within an object.
+ * Create an object called "newUser". It should be equal to "user" with this small change:
+ * The email address should be equal to "newEmail" (e.g. "purrfect@gmail.com").
+ * @example console.log(newUser);
+ * // { id: 1234, username: "lolcatz1", email: "purrfect@gmail.com" };
+ *
  * You should use the spread operator to shallow copy the original object.
- * Solve this problem without a third-party library.
- * @param {Object} user
- * e.g. { id: 1234, username: "lolcatz1", email: "lolcatz1@gmail.com" }
- * @param {string} newEmail e.g. "purr@gmail.com"
  *
- * @returns a copy of user, with the email property changed.
- *
- * @example
- * const newUser = changeEmail(
- *    { id: 1234, username: "lolcatz1", email: "lolcatz1@gmail.com" },
- *    "purrfect@gmail.com"
- * );
- * console.log(newUser); // { id: 1234, username: "lolcatz1", email: "purr@gmail.com" }
- *
- * user.email = "icanhascheeseburger@yahoo.com"; // This should not change newUser
+ * Your answer should still work when "user" and "newEmail" are equal to different values.
  */
-const changeEmail = (user, newEmail) => {
-  // WRITE YOUR ANSWER HERE
-};
 
-// IGNORE THIS BELOW. It is for the tests.
-
-export { changeEmail };
+// WRITE YOUR ANSWER BELOW THIS LINE

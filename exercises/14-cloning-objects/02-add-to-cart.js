@@ -1,27 +1,23 @@
+const shoppingCart = [{ name: "TV - 20ft", price: 1000000 }]; // e.g.
+const newItem = { name: "Popcorn", price: 5 }; // e.g.
+
 /**
- * Add a new item to a shopping cart. You should deep copy any array and objects.
- * Solve this problem without a third-party library.
- * @param {Array} shoppingCart an array of objects
- * e.g. [{ name: "TV - 20ft", price: 1000000 }]
- * @param {*} newItem an object to add to the shopping cart array
- * e.g. { name: "Popcorn", price: 5 }
+ * Create an object called "newShoppingCart".
+ * It should deep copy "shoppingCart" and add "newItem" to the "newShoppingCart".
+ * Any changes to "shoppingCart" or "newItem" should not effect "newShoppingCart".
  *
- * @returns the *shoppingCart* array, with the object *newItem* added to it.
- * Both *shoppingCart* and *newItem* should be deep copied.
+ * @example console.log(newShoppingCart);
+ * // [{ name: "TV - 20ft", price: 1000000 }, { name: "Popcorn", price: 5 }]
  *
- * @example
- * const shoppingCart = [{ name: "TV - 20ft", price: 1000000 }];
- * const newItem = { name: "Popcorn", price: 5 };
- * const newShoppingCart = addToCart(shoppingCart, newItem);
- * console.log(newShoppingCart); // [{ name: "TV - 20ft", price: 1000000 }, { name: "Popcorn", price: 5 }]
- *
- * shoppingCart[0].price = 9000000; // This should not change newShoppingCart
+ * // This should not change "newShoppingCart" or "newItem"
+ * shoppingCart[0].price = 9000000;
+ * console.log(newShoppingCart); // 1000000
  * newItem.price = 10; // This should not change newItem
+ * console.log(newItem); // 5
+ *
+ * Solve this problem without a third-party library.
+ *
+ * Your answer should still work when "shoppingCart" and "newItem" are equal to different values.
  */
-const addToCart = (shoppingCart, newItem) => {
-  // WRITE YOUR ANSWER HERE
-};
 
-// IGNORE THIS BELOW. It is for the tests.
-
-export { addToCart };
+// WRITE YOUR ANSWER BELOW THIS LINE

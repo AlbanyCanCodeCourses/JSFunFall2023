@@ -1,9 +1,7 @@
 import { expect } from "chai";
+import { changeEmail, addToCart } from "./cloning-objects-test-helper.js";
 
-import { changeEmail } from "../../exercises/07-cloning-objects/01-change-email.js";
-import { addToCart } from "../../exercises/07-cloning-objects/02-add-to-cart.js";
-
-describe("7. Cloning Objects", () => {
+describe("Cloning Objects", () => {
   describe("01-change-email", () => {
     const user = {
       id: 1234,
