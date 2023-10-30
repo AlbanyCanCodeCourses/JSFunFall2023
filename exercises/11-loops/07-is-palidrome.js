@@ -11,3 +11,10 @@ let string = "racecar";
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+let formattedString = string.toLowerCase().replace(/\s/g, "");
+
+// Reverse the string using split and join
+let reversedString = formattedString.split("").reverse().join("");
+
+// Check if the reversed string is the same as the original string
+let isPalindrome = formattedString === reversedString;
