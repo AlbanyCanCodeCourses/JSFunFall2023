@@ -4,7 +4,7 @@ import {
   getErrorMessage,
 } from "./more-conditionals-test-helper.js";
 
-describe("13. More Conditionals", () => {
+describe("More Conditionals", () => {
   describe("01-ternary-operator", () => {
     it('"isEvenOrOdd" should equal "even" if "num" is even', () => {
       expect(isEvenOrOdd(22)).to.equal("even");
