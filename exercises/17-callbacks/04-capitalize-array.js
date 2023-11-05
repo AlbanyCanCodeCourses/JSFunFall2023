@@ -17,6 +17,10 @@ const capitalizeString = (str) => {
  * @example
  * const capitalizeString = (str) => str.toUpperCase();
  * const result = capitalizeArray(['hello', 'world'], capitalizeString); // ['HELLO', 'WORLD']
+ *
+ * @param {array} originalArray
+ * @param {function} callback
+ * @returns {array}
  */
 const capitalizeArray = (originalArray, callback) => {
   // WRITE YOUR ANSWER IN HERE

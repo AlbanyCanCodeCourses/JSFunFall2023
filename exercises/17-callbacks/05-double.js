@@ -11,13 +11,17 @@ const doubleNumber = (num) => {
  * - Loop through each number in the "originalArray" array using a for loop.
  * - In the loop, call the callback function with the current number as its argument.
  * This should return the doubled value of the number. Store the doubled value in a
- * variable called doubledNum.
- * - Add doubledNum to the result array.
+ * variable called "doubledNum".
+ * - Add "doubledNum" to the result array.
  * - After the loop, return the result array, which should now contain the doubled numbers.
  *
  * @example
  * const doubleNumber = (num) => num * 2;
  * const result = doubleArray([1, 2, 3], doubleNumber); // [2, 4, 6]
+ *
+ * @param {array} originalArray
+ * @param {function} doubleNumber
+ * @returns {array}
  */
 
 const doubleArray = (originalArray, doubleNumber) => {

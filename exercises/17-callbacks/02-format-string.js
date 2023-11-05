@@ -5,16 +5,20 @@ const format = (string1, string2) => {
 };
 
 /**
- * The function "formatString" below with will accept two strings
- * and a callback function.
+ * In "formatString" function below, use a callback function to format a string.
  *
- * What you need to do is to return and invoke the callback function
- * inside of "formatString". It should accept the two strings as parameters.
+ * Here are the steps you need to take to complete this problem:
+ * - Return and invoke "callback". It should accept the two strings as arguments.
  *
  * @example
  * console.log( formatString("Wash dishes", "Do laundry", format) );
  * // - Wash Dishes
  * // - Do laundry
+ *
+ * @param {string} string1
+ * @param {string} string2
+ * @param {function} callback
+ * @returns {string}
  */
 
 const formatString = (string1, string2, callback) => {

@@ -9,11 +9,17 @@ const subtract = (num1, num2) => {
 };
 
 /**
- * The function "calculate" below with will accept two numbers
- * and a callback function.
+ * In "calculate" function below, use a callback function to perform a calculation.
  *
- * What you need to do is to return and invoke the callback function
- * inside of "calculate". It should accept the two numbers as parameters.
+ * Before completing this problem, ask yourself these questions:
+ * - What are function parameters and arguments?
+ * - What does it mean to "invoke" a function? How do you do that?
+ * - How do you return a value inside of a function?
+ * If you do not know the answer to these questions, please review the function
+ * exercises and slides. Please ask for help.
+ *
+ * Here are the steps you need to take to complete this problem:
+ * - Return and invoke "callback". It should accept the two numbers as arguments.
  *
  * @example
  * const add = (a, b) => {
@@ -24,6 +30,11 @@ const subtract = (num1, num2) => {
  * }
  * console.log( calculate(5, 10, add) ); // 15
  * console.log( calculate(7, 3, subtract) ); // 4
+ *
+ * @param {number} num1
+ * @param {number} num2
+ * @param {function} callback
+ * @returns {number}
  */
 
 const calculate = (num1, num2, callback) => {

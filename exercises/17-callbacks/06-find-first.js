@@ -34,6 +34,10 @@ const isNumberTwoDigits = (num) => {
  * };
  * console.log( findFirst([1, 3, 7, 8, 20], isNumberEven) ) // 8
  * console.log( findFirst([4, 500, 30, 2], isNumberTwoDigits) ) // 30
+ *
+ * @param {array} arrayOfNum
+ * @param {function} callback
+ * @returns {number}
  */
 
 const findFirst = (arrayOfNum, callback) => {
