@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { findLowestNumber, generateLinks } from "./for-each-test-helper.js";
 
-describe("10. ForEach", () => {
+describe("For Each", () => {
   describe("01-lowest-num", () => {
     it('should change the variable "lowestNumber" so that it equals the lowest number in an array of numbers', () => {
       const numbers = [1, 9999999, 4.13, -20];
