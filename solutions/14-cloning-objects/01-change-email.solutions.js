@@ -14,5 +14,8 @@ const newEmail = "purrfect@gmail.com"; // e.g.
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
-
 const newUser = { ...user, email: newEmail };
+
+// Here is how you could have solved this problem with "structuredClone":
+const newUser = structuredClone(user);
+newUser.email = newEmail;

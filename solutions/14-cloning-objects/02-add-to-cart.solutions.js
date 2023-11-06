@@ -21,8 +21,20 @@ const newItem = { name: "Popcorn", price: 5 }; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+// Solution 1: for loop
 let newShoppingCart = [];
 for (let i = 0; i < shoppingCart.length; i++) {
   newShoppingCart.push({ ...shoppingCart[i] });
 }
 newShoppingCart.push({ ...newItem });
+
+// Solution 2: for ... of loop
+let newShoppingCart = [];
+for (let item of shoppingCart) {
+  newShoppingCart.push({ ...item });
+}
+newShoppingCart.push({ ...newItem });
+
+// Solution 3: structuredClone
+const newShoppingCart = structuredClone([...shoppingCart, newItem]);
