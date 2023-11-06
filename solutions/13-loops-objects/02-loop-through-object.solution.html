@@ -55,32 +55,21 @@
 
         const list = document.querySelector("#list");
 
-        /**
+         /**
          * Loop through the object "movies" below.
          * The code below should go inside the loop.
          * Change the code below so that it will work for the other movies too.
          */
-
-          for (const movieKey in movies){
-            if (movies.hasOwsnProperty(movieKey)) {
-              const movie = mvovies[movieKey];
-
-              const htmlString = "";
-            }
-          }
-
-
-        let movie = movies["halloween-ends"];
-        const htmlString = `<li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold">${movie.title}</div>
-            ${movie.description}
-          </div>
-        </li>`;
-        list.insertAdjacentHTML("beforeend", htmlString);
-
-        // Do not change anything below this line.
-      })();
+        for (let prop in movies) {
+          const movie = movies[prop];
+          const htmlString = `<li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">${movie.title}</div>
+              ${movie.description}
+            </div>
+          </li>`;
+          list.insertAdjacentHTML("beforeend", htmlString);
+        }
     </script>
   </body>
 </html>
