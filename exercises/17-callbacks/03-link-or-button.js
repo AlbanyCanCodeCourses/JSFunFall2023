@@ -18,7 +18,7 @@ const createButton = (text) => {
  */
 
 // CHANGE SOMETHING WITH THE FUNCTION DECLARATION
-const createCallToAction = (clickableText) => {
+const createCallToAction = (clickableText, callback) => {
   // CHANGE SOMETHING INSIDE THIS FUNCTION
   return (
     "<div>Limited Time: Members Save 30%<br>" +
@@ -28,7 +28,7 @@ const createCallToAction = (clickableText) => {
 };
 
 // CHANGE SOMETHING HERE TOO so that creates a link
-console.log(createCallToAction("Book Now"));
+createCallToAction("Book Now");
 
 // IGNORE THIS BELOW. It is for the tests.
 

@@ -26,6 +26,12 @@ const doubleNumber = (num) => {
 
 const doubleArray = (originalArray, doubleNumber) => {
   // WRITE YOUR ANSWER IN HERE
+  const result = [];
+  for (let i = 0; i < originalArray.length; i++) {
+    const doubledNum = callback(originalArray[i]);
+    result.push(doubledNum);
+  }
+  return result;
 };
 
 // Uncomment me to test your answer in Quokka
