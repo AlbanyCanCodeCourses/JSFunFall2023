@@ -12,4 +12,18 @@
  */
 (function () {
   // Put your answers in here
+  let firstLi = document.querySelector("li");
+  console.log(firstLi);
+
+  let yellowLi = document.querySelectorAll("ul > li.bg-warning");
+
+  yellowLi.forEach((li) => {
+    console.log(li);
+  });
+  // console.log(yellowLi);
+  const targetBtn = document.querySelector(".target-btn");
+  console.log(targetBtn);
+
+  const socialTags = document.querySelectorAll("a");
+  socialTags.forEach((a) => console.log(a));
 })();
