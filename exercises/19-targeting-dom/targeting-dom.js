@@ -24,6 +24,9 @@
   const targetBtn = document.querySelector(".target-btn");
   console.log(targetBtn);
 
-  const socialTags = document.querySelectorAll("a");
+  const socialTags = document.querySelectorAll(".social");
   socialTags.forEach((a) => console.log(a));
+
+  const targetGreenCell = document.querySelectorAll("#myRow");
+  targetGreenCell.forEach((green) => console.log(green));
 })();
