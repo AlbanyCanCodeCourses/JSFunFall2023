@@ -9,6 +9,11 @@
    * @see https://developer.mozilla.org/en-US/docs/Web/API/Window/alert
    */
   // Write your answer here
+  const alertBtn = document.querySelector(".btn-success");
+  handleClick = alertBtn.addEventListener("click", () => {
+    alert("Alert Alert");
+  });
+
   /**
    * Problem 2: Disable a button that will charge a credit card.
    *
