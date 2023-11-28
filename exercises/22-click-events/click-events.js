@@ -10,7 +10,7 @@
    */
   // Write your answer here
   const alertBtn = document.querySelector(".btn-success");
-  handleClick = alertBtn.addEventListener("click", () => {
+  alertBtn.addEventListener("click", () => {
     alert("Alert Alert");
   });
 
@@ -22,4 +22,10 @@
    * 2. Change the text to say e.g. "Loading ..." once it is clicked.
    */
   // Write your answer here
+  const ccBtn = document.querySelector(".btn-warning");
+  ccBtn.addEventListener("click", () => {
+    ccBtn.setAttribute("disabled", "");
+    ccBtn.textContent = "Loading";
+    console.log("hello work");
+  });
 })();
