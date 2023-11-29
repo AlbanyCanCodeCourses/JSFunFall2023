@@ -25,7 +25,6 @@
   const ccBtn = document.querySelector(".btn-warning");
   ccBtn.addEventListener("click", () => {
     ccBtn.setAttribute("disabled", "");
-    ccBtn.textContent = "Loading";
-    console.log("hello work");
+    ccBtn.textContent = "Loading ...";
   });
 })();
