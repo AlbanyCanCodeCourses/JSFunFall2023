@@ -5,6 +5,13 @@
    * When the user clicks on the "Accept Cookies" button, the "Accept Cookies" popup should disappear.
    */
   // Write your answer here
+
+  const acceptCookies = document.querySelector("#acceptCookiesPopup");
+  const acceptCookiesBtn = document.querySelector("#acceptCookiesButton");
+
+  acceptCookiesBtn.addEventListener("click", () => {
+    acceptCookies.style.display = "none";
+  });
   /**
    * Problem 2: Show comments for the news story.
    *
