@@ -29,7 +29,18 @@
    * The exercise must be completed with a form handler
    * and you must prevent the page from refreshing when the form is submitted.
    */
-  // Write your answer here
+  // Write your answer here'
+  const searchBar = document.querySelector(".searchForm");
+  const userSearch = document.querySelector(".searchBar");
+
+  const displayMessage = document.querySelector(".text-white");
+
+  handleSearchMessage = (e) => {
+    e.preventDefault();
+    displayMessage.textContent = `No results for ${userSearch.value}`;
+  };
+
+  searchBar.addEventListener("submit", handleSearchMessage);
   /**
    * Problem 3: Agree to the terms and conditions
    *
