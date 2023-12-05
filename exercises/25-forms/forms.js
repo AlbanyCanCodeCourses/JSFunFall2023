@@ -10,6 +10,13 @@
    * it should display what the user is typing in the <div></div> tags below.
    */
   // Write your answer here
+  const userInput = document.querySelector("#mysteryInput");
+  const cardMessage = document.querySelector(".card");
+  handleMessage = () => {
+    cardMessage.textContent = userInput.value;
+  };
+
+  userInput.addEventListener("input", handleMessage);
   /**
    * Problem 2: Display the results of the world's most pointless search engine.
    *
