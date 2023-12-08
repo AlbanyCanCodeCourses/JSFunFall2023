@@ -37,7 +37,7 @@
 
   handleSearchMessage = (e) => {
     e.preventDefault();
-    displayMessage.textContent = `No results for ${userSearch.value}`;
+    displayMessage.textContent = `No results for ${userSearch.value} found`;
   };
 
   searchBar.addEventListener("submit", handleSearchMessage);
@@ -59,4 +59,23 @@
    * To start, you will need to hide some element on the page and change the input's classes.
    */
   // Write your answer here
+
+  const agreeTermsMsg = document.querySelector("div.text-danger  small");
+  const thankYouMsg = document.querySelector("div.text-success > small");
+
+  const agreeCheckBox = document.querySelector(".agreeFullBox");
+  agreeTermsMsg.style.visibility = "hidden";
+  thankYouMsg.style.visibility = "hidden";
+
+  agreeCheckBox.style.color = "black";
+
+  validateInput = () => {};
+
+  agreeCheckBox.addEventListener("submit", (e) => {
+    if (e.target.checked) {
+      thankYouMsg.style.visibility = "visible";
+    } else if (!e.target.checked) {
+      agreeTermsMsg.style.visibility = "visible";
+    }
+  });
 })();

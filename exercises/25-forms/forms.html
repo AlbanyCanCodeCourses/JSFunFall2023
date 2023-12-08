@@ -76,9 +76,9 @@
       <div class="container d-flex justify-content-center">
         <form>
           <div class="form-inline">
-            <div class="form-check form-check-inline">
+            <div class="form-check form-check-inline agreeFullBox">
               <!-- The "is-invalid" class here makes the "I Agree ..." red. The input should only have this class if the user did not agree to the terms and conditions -->
-              <input class="form-check-input is-invalid" type="checkbox" />
+              <input class="form-check-input" type="checkbox" />
               <label class="form-check-label" for="terms"
                 >I Agree to the Terms and Conditions</label
               >
@@ -88,7 +88,7 @@
           </div>
 
           <!-- Only display me if the user did not agree to the terms and conditions -->
-          <div class="text-danger">
+          <div class="text-danger hidden">
             <small>You must agree to the terms and conditions</small>
           </div>
 
