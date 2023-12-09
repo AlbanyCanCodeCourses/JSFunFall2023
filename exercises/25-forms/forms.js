@@ -60,22 +60,25 @@
    */
   // Write your answer here
 
-  const agreeTermsMsg = document.querySelector("div.text-danger  small");
-  const thankYouMsg = document.querySelector("div.text-success > small");
+  const errorMsg = document.querySelector(".text-danger");
+  const successMsg = document.querySelector(".text-success");
+  successMsg.style.display = "none";
+  errorMsg.style.display = "none";
 
-  const agreeCheckBox = document.querySelector(".agreeFullBox");
-  agreeTermsMsg.style.visibility = "hidden";
-  thankYouMsg.style.visibility = "hidden";
+  const termsForm = document.querySelector(".form-agree");
 
-  agreeCheckBox.style.color = "black";
-
-  validateInput = () => {};
-
-  agreeCheckBox.addEventListener("submit", (e) => {
-    if (e.target.checked) {
-      thankYouMsg.style.visibility = "visible";
-    } else if (!e.target.checked) {
-      agreeTermsMsg.style.visibility = "visible";
+  termsForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    checkbox = document.querySelector(".form-check-input");
+    agreeText = document.querySelector(".form-check-input");
+    if (checkbox.checked) {
+      successMsg.style.display = "block";
+      errorMsg.style.display = "none";
+      agreeText.classList.remove("is-invalid");
+    } else if (!checkbox.checked) {
+      successMsg.style.display = "none";
+      errorMsg.style.display = "block";
+      agreeText.classList.add("is-invalid");
     }
   });
 })();
