@@ -46,14 +46,22 @@
   try {
     let quoteBtn = document.querySelector(".btn");
     let blockQuote = document.querySelector("#quote");
+
     quoteBtn.addEventListener("click", async () => {
-      let quote = await axios(
-        "https://ron-swanson-quotes.herokuapp.com/v2/quotes"
-      );
-      let data = quote.data[0];
-      blockQuote.textContent = data;
+      //try catch within this async function because this is whats targeting the click of the button and whether a quote shows up or not
+      try {
+        let quote = await axios(
+          "https://ron-swanson-quotes.herokuapp.com/v2/quotes"
+        );
+        let data = quote.data[0];
+        blockQuote.textContent = data;
+      } catch (err) {
+        const htmlStr = `<div class="text-danger">We're sorry, but an unexpected error occurred</div>`;
+        let container = document.querySelector(".container");
+        container.insertAdjacentHTML("beforeend", htmlStr);
+      }
     });
   } catch (err) {
-    return console.log("error", err);
+    console.log(err);
   }
 })();
