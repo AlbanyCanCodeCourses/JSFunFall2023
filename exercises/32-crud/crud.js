@@ -31,6 +31,12 @@
     `;
       tableBody.appendChild(row);
       // console.log(row.id);
+
+      const deleteButton = row.querySelector(".deleteBtn");
+
+      deleteButton.addEventListener("click", () => {
+        row.remove();
+      });
     });
   } catch (err) {
     return console.log(err);
