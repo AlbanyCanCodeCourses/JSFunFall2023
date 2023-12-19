@@ -1,4 +1,4 @@
-!(function () {
+!(async () => {
   /**
    * You will be using the Dummy Product API. You can find the documentation here:
    * @see https://dummyjson.com/docs/products
@@ -7,6 +7,36 @@
    * You will need to make three AJAX requests using the Dummy Product API.
    *
    * 1. Make an AJAX request to get a list of products.
+   *
+   */
+  const tableBody = document.querySelector("#productTableBody");
+  tableBody.innerHTML = "";
+
+  try {
+    const results = await axios("https://dummyjson.com/products");
+    results.data.products.forEach((product) => {
+      let row = document.createElement("tr");
+      row.id = product.id;
+      row.innerHTML = `
+      <td>${product.id}</td>
+      <td>${product.title}</td>
+      <td>${product.description}</td>
+      <td>${product.price}</td>
+      <td>${product.discount}</td>
+      <td>${product.rating}</td>
+      <td>${product.stock}</td>
+      <td>${product.brand}</td>
+      <td>${product.category}</td>
+      <td><button class="deleteBtn">Delete</button></td>
+    `;
+      tableBody.appendChild(row);
+      // console.log(row.id);
+    });
+  } catch (err) {
+    return console.log(err);
+  }
+
+  /*
    *    Display the list of products in the table below.
    *    See the sample table row HTML below.
    *    Each row must have a "Delete" button.
