@@ -64,17 +64,17 @@
   const addProductForm = document.querySelector("#productForm");
 
   addProductForm.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const productTitle = document.querySelector("#title");
-    const productDescription = document.querySelector("#description");
-    const productPrice = document.querySelector("#price");
-    const productDiscount = document.querySelector("#discountPercentage");
-    const productRating = document.querySelector("#rating");
-    const productStock = document.querySelector("#stock");
-    const productBrand = document.querySelector("#brand");
-    const productCategory = document.querySelector("#category");
-
     try {
+      e.preventDefault();
+      const productTitle = document.querySelector("#title");
+      const productDescription = document.querySelector("#description");
+      const productPrice = document.querySelector("#price");
+      const productDiscount = document.querySelector("#discountPercentage");
+      const productRating = document.querySelector("#rating");
+      const productStock = document.querySelector("#stock");
+      const productBrand = document.querySelector("#brand");
+      const productCategory = document.querySelector("#category");
+
       const response = await axios.post("https://dummyjson.com/products/add", {
         title: productTitle.value,
         description: productDescription.value,
@@ -87,6 +87,7 @@
       });
 
       addProductToTable(response.data);
+      addProductForm.reset();
     } catch (error) {
       console.log(error);
     }
