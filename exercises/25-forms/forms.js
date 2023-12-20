@@ -10,6 +10,13 @@
    * it should display what the user is typing in the <div></div> tags below.
    */
   // Write your answer here
+  const userInput = document.querySelector("#mysteryInput");
+  const cardMessage = document.querySelector(".card");
+  handleMessage = () => {
+    cardMessage.textContent = userInput.value;
+  };
+
+  userInput.addEventListener("input", handleMessage);
   /**
    * Problem 2: Display the results of the world's most pointless search engine.
    *
@@ -22,7 +29,18 @@
    * The exercise must be completed with a form handler
    * and you must prevent the page from refreshing when the form is submitted.
    */
-  // Write your answer here
+  // Write your answer here'
+  const searchBar = document.querySelector(".searchForm");
+  const userSearch = document.querySelector(".searchBar");
+
+  const displayMessage = document.querySelector(".text-white");
+
+  handleSearchMessage = (e) => {
+    e.preventDefault();
+    displayMessage.textContent = `No results for ${userSearch.value} found`;
+  };
+
+  searchBar.addEventListener("submit", handleSearchMessage);
   /**
    * Problem 3: Agree to the terms and conditions
    *
@@ -41,4 +59,26 @@
    * To start, you will need to hide some element on the page and change the input's classes.
    */
   // Write your answer here
+
+  const errorMsg = document.querySelector(".text-danger");
+  const successMsg = document.querySelector(".text-success");
+  successMsg.style.display = "none";
+  errorMsg.style.display = "none";
+
+  const termsForm = document.querySelector(".form-agree");
+
+  termsForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    checkbox = document.querySelector(".form-check-input");
+    agreeText = document.querySelector(".form-check-input");
+    if (checkbox.checked) {
+      successMsg.style.display = "block";
+      errorMsg.style.display = "none";
+      agreeText.classList.remove("is-invalid");
+    } else if (!checkbox.checked) {
+      successMsg.style.display = "none";
+      errorMsg.style.display = "block";
+      agreeText.classList.add("is-invalid");
+    }
+  });
 })();

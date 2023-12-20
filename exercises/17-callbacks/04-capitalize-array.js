@@ -24,10 +24,19 @@ const capitalizeString = (str) => {
  */
 const capitalizeArray = (originalArray, callback) => {
   // WRITE YOUR ANSWER IN HERE
+  const result = []; // Create an empty array to store the capitalized strings
+
+  for (let i = 0; i < originalArray.length; i++) {
+    const capitalizedStr = callback(originalArray[i]); // Capitalize the current string
+    result.push(capitalizedStr); // Add the capitalized string to the result array
+  }
+
+  return result; // Return the array containing the capitalized strings
 };
 
 // Uncomment me to test your answer in Quokka
-// const result = capitalizeArray(['hello', 'world'], capitalizeString);
+const result = capitalizeArray(["hello", "world"], capitalizeString);
+console.log(result);
 
 // IGNORE THIS BELOW. It is for the tests.
 

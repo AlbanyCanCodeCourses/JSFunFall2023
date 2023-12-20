@@ -14,6 +14,7 @@
   "author": "CanCode Communities",
   "homepage": "https://github.com/AlbanyCanCodeCourses/JSFunFall2023#readme",
   "dependencies": {
+    "axios": "^1.6.2",
     "chai": "^4.3.8",
     "mocha": "^10.2.0",
     "sinon": "^16.0.0"

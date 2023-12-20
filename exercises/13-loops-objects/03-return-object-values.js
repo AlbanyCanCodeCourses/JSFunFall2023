@@ -18,3 +18,5 @@ const blogPost = {
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+let values = Object.values(blogPost);

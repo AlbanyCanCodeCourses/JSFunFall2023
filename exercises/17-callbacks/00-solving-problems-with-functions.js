@@ -6,10 +6,11 @@
 
 const returnAnswer = (personName) => {
   // WRITE YOUR ANSWER IN HERE
+  return personName;
 };
 
 // Uncomment me to test in Quokka
-// console.log(returnAnswer("Lesley"));
+console.log(returnAnswer("Lesley"));
 
 // DO NOT DELETE BELOW. It is for the tests.
 

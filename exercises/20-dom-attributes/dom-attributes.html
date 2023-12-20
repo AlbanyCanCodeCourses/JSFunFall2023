@@ -14,11 +14,19 @@
       (function () {
         /**
          * Question 1: Use console.log to log the image url (the src)
+         
          * Question 2: Change the image (the src)
          * Question 3: Add an alt attribute to the image
          *
          * Write your answers to each question below
          */
+
+        const panda = document.querySelector("img");
+        console.log(panda.src);
+        panda.src =
+          "https://d3vhc53cl8e8km.cloudfront.net/hello-staging/wp-content/uploads/sites/44/2022/03/29093017/Alex-Perez-for-Insomniac-Events-2__720h.jpg";
+        panda.alt =
+          "this is a photo of edc orlando main stage Kinetic Field, fireworks are in the sky as well";
       })();
     </script>
   </body>

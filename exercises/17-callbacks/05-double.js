@@ -26,10 +26,11 @@ const doubleNumber = (num) => {
 
 const doubleArray = (originalArray, doubleNumber) => {
   // WRITE YOUR ANSWER IN HERE
+  return doubleNumber(originalArray);
 };
 
 // Uncomment me to test your answer in Quokka
-// doubleArray([1, 2, 3], doubleNumber);
+doubleArray([1, 2, 3], doubleNumber);
 
 // IGNORE THIS BELOW. It is for the tests.
 

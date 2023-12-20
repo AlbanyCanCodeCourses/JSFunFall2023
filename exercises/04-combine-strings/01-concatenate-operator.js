@@ -16,3 +16,5 @@ let author = "J. K. Rowling";
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+const bookInfo = bookTitle + " by " + author;

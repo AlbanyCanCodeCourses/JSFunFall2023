@@ -13,3 +13,5 @@ const obj2 = { lastName: "Kent" }; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+let myObject = { ...obj1, ...obj2 };
