@@ -21,3 +21,8 @@ const newItem = { name: "Popcorn", price: 5 }; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+let newShoppingCart = [];
+for (let i = 0; i < shoppingCart.length; i++) {
+  newShoppingCart.push({ ...shoppingCart[i] });
+}
+newShoppingCart.push({ ...newItem });

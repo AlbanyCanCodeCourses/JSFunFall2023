@@ -9,3 +9,7 @@ let day = "Saturday";
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+let isWeekend = false;
+if (day === "Saturday" || day === "Sunday") {
+  isWeekend = true;
+}

@@ -6,3 +6,10 @@ const ONE_HUNDRED = 100;
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+const percentage = 18 / 9;
+
+const newPercentage = percentage *= ONE_HUNDRED;
+
+
+const percentages = (4 / 5) *= ONE_HUNDRED;
+

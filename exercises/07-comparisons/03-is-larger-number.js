@@ -10,3 +10,5 @@ let num2 = 20; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+let isLargerNumber = num2 > num1;

@@ -11,3 +11,11 @@ let error = "Username already exists."; // When the test runs, this could also b
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+let errorMessage = error || "An unexpected error occurred.";
+
+console.log(errorMessage);
+
+const calculate = (anotherFunction, a, b) => {
+  return anotherFunction(a, b);
+};

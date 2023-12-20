@@ -4,3 +4,11 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+
+
+let restaurants = [
+  "McDonalds",
+  "Burger King",
+  "Wendy's",
+];
