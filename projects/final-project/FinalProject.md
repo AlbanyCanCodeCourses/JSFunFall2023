@@ -237,9 +237,16 @@ In addition to submitting code, you will need to submit a hosted version of your
 1. Open you Github repository e.g. https://github.com/my-github-username/final-project for your project in a web browser.
 2. Click on the "Settings" tab below the "Unwatch", "Star", and "Fork" buttons.
 3. In the sidebar, click on "Pages".
-4. Underneath where it says "Source", click on the "Branch" dropdown and select "Main".
+4. Underneath where it says "Source", click on the "Branch" dropdown and select "main".
 5. Hit the "Save" button.
 6. You will see the URL for your published project (e.g. https://my-github-username.github.io/final-project), but it may take up to 15 minutes before the link works. If you click on the link and click a page not found error, you can try opening it an Incognito window or another browser.
+
+In the future, if you want to deploy any changes to your website:
+
+1. Commit all of your changes
+2. Run `git push origin main`
+
+Then it should take a little a minute for the changes to go into effect.
 
 ## Project Design
 

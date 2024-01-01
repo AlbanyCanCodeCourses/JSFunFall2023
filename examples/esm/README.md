@@ -1,4 +1,4 @@
-# ES Modules Demo
+# ES Modules Tutorial
 
 Press `command+shift+v` on Mac or `ctrl+shift+v` on Windows to preview this in Visual Studio Code.
 
@@ -56,6 +56,6 @@ In Visual Studio code, find the file _examples/esm/esm.html_ in the sidebar. Rig
 
 You will need to start a web server in order for ESM to work. One simple way to do this is to use [VSCode's LiveServer plugin](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), which you can install from the "Extensions" tab in the sidebar. Open the file _examples/esm/esm.html_. Then click on "Go Live" in the status bar at the very bottom of your screen. This should open the HTML page in your web browser, and you should see the popup "It works!".
 
-Alternatively, you can install the web server [serve](https://www.npmjs.com/package/serve) with Node.js.
+Alternatively, you can install the server [Vercel's "serve"](https://www.npmjs.com/package/serve) with Node.js.
 
-While LiveServer and _serve_ are very easy to use, they are really only suitable for developing very small static websites. Most JavaScript developers need much more from their tooling. Popular options are [Webpack](https://webpack.js.org/) and [Vite.js](https://vitejs.dev/). See the other examples for more on tooling.
+While LiveServer and Vercel's "serve" are very easy to use, they are really only suitable for developing very small static websites. Most JavaScript developers need much more from their tooling. Popular options are [Webpack](https://webpack.js.org/) and [Vite.js](https://vitejs.dev/). See the other examples for more on tooling.
